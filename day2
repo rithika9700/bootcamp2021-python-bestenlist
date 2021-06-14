@@ -1,0 +1,54 @@
+day 2 task
+
+>>>print("30 hours 30 days)
+30 hours 30 days
+>>> hours="thirty"
+>>> print(hours)
+thirty
+>>> 
+>>> Days="Thirty days"
+>>> print(Days[0])
+T
+>>> Challege="i will win"
+>>> print(Challege[4:8])
+ll w
+>>> Challenge="i will win"
+>>> print(len(Challenge))
+10
+>>> print(Challenge.lower())
+i will win
+>>> a="hello"
+>>> b="world"
+>>> c=a+b
+>>> print(c)
+helloworld
+>>> c=a+" "+b
+>>> a="hello"
+>>> b="there"
+>>> print(a+" "+b)
+hello there
+>>> text="Hello Guys Im Rithika"
+>>> x=text.casefold()
+>>> print(x)
+hello guys im rithika
+>>> x="rithika"
+>>> y=x.capitalise()
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    y=x.capitalise()
+AttributeError: 'str' object has no attribute 'capitalise'
+>>> x="rithika"
+>>> y=x.capitalize()
+>>> print(y)
+Rithika
+>>> txt="Hello, Welcome"
+>>> x=txt.find("Hello")
+>>> print(x)
+0
+>>> r=txt.isalpha()
+>>> print(r)
+False
+>>> r=txt.isalnum()
+>>> print(r)
+False
+>>> 
