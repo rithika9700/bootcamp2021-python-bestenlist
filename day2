@@ -31,12 +31,7 @@ hello there
 >>> x=text.casefold()
 >>> print(x)
 hello guys im rithika
->>> x="rithika"
->>> y=x.capitalise()
-Traceback (most recent call last):
-  File "<pyshell#22>", line 1, in <module>
-    y=x.capitalise()
-AttributeError: 'str' object has no attribute 'capitalise'
+
 >>> x="rithika"
 >>> y=x.capitalize()
 >>> print(y)
