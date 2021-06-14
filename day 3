@@ -1,0 +1,49 @@
+from tkinter import *
+root = Tk()
+root.geometry("500x300")
+
+def getvals():
+    print("Accepted")
+
+Label(root,text="Python Registration Form", font="arial 15 bold").grid(row=0, column=3)
+
+name = Label(root,text="name")
+phone = Label(root,text="phone")
+gender = Label(root,text="gender")
+id = Label(root,text="id")
+age = Label(root,text="age")
+
+name.grid(row=1,column=2)
+phone.grid(row=2,column=2)
+gender.grid(row=3,column=2)
+id.grid(row=4,column=2)
+age.grid(row=5,column=2)
+
+namevalue = StringVar
+phonevalue = StringVar
+var = StringVar()
+checkvalue=IntVar
+idvalue = StringVar
+agevalue = StringVar
+
+nameentry = Entry(root,textvariable=namevalue)
+phoneentry = Entry(root,textvariable=phonevalue)
+drop = OptionMenu(root, var, "male","female")
+identry = Entry(root,textvariable=idvalue)
+ageentry = Entry(root,textvariable=agevalue)
+
+nameentry.grid(row=1,column=3)
+phoneentry.grid(row=2,column=3)
+drop.grid(row=3,column=3)
+identry.grid(row=4,column=3)
+ageentry.grid(row=5,column=3)
+
+
+checkbtn = Checkbutton(text="vaccinated?", variable=checkvalue)
+checkbtn.grid(row=6,column=3)
+
+Button(text="submit",command=getvals).grid(row=7,column=3)
+
+
+
+root.mainloop()
