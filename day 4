@@ -1,0 +1,16 @@
+>>> a=b=c=100
+>>> print(a/10)
+10.0
+>>> print(b*50)
+5000
+>>> print(c+60)
+160
+>>> string="rithika"
+>>> string.replace("t","g")
+'righika'
+>>> a=5
+>>> b=6.78
+>>> print(float(a))
+5.0
+>>> print(int(b))
+6
