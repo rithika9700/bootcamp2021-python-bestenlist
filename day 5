@@ -1,0 +1,74 @@
+1.create a list
+def createlist():
+    n=int(input("enter n"))
+    list=[]
+    for i in range(0,n):
+        list.append(i)
+    print (list)
+
+createlist()
+
+a.add an item 
+
+def add():
+    list=[1,2,3,4,5]
+    print( list)
+    r=int(input("pls enter the number"))
+    p=int(input("pls enter position"))
+    list.insert(p,r)
+    print(list)
+add()
+
+b.delete
+
+def delete():
+    list=[1,2,3,4,5]
+    print( list)
+    p=int(input("pls enter position"))
+    list.pop(p)
+    print(list)
+delete()
+
+def clear():
+    list=[9,8,7,6,5]
+    list.clear()
+    print(list)
+
+clear()
+
+c.largest no
+
+ list=[9,7,8,5,4]
+>>> list.sort()
+>>> max=list[4]
+>>> print(max)
+9
+
+smallest no
+>>> min=list[0]
+>>> print(min)
+4
+
+
+2.create and reverse a tuple:
+>>> tuple=(6,9,8,7,4)
+>>> print(tuple)
+(6, 9, 8, 7, 4)
+
+
+
+def Reverse(tuples):
+	newtup=()
+	for i in reversed(tuples):
+		newtup=newtup+(i,)
+	print(newtup)
+tuples=(10,89,76,87)
+Reverse(tuples)
+
+
+3.convert tuple to list
+>>> tuple=(6,9,8,7,4)
+>>> list=list(tuple)
+>>> print("List:",list)
+List: [6, 9, 8, 7, 4]
+
