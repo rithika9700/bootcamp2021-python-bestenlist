@@ -40,7 +40,7 @@ c.largest no
 
  list=[9,7,8,5,4]
 >>> list.sort()
->>> max=list[4]
+>>> max=list[len(list)-1]
 >>> print(max)
 9
 
