@@ -1,0 +1,37 @@
+functions:
+addition:
+def math():
+    a=int(input("enter a"))
+    b=int(input("enter b"))
+    c=a+b
+    d=a-b
+    f=a/d
+    e=a*d
+    print("addition of a and b is",+c)
+    print("sub of a and b is",+d)
+    print("div of a and b is",+f)
+    print("mul of a and b is",+e)
+    
+
+math()
+
+enter a7
+enter b0
+addition of a and b is 7
+sub of a and b is 7
+div of a and b is 1.0
+mul of a and b is 49
+
+2.
+def covid(name,temp='98'):
+    
+    
+    print("The name of the patient is",name,"his body temp is",temp)
+
+covid('john')
+    
+    
+
+
+
+The name of the patient is john his body temp is 98
