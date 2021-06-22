@@ -27,4 +27,129 @@ print(set(names))
 {0, 2, 4, 7, 8, 9}
 
 
-3.
+3.find no of items in the dictionary and sort them:
+
+dict={"b":"rithika","e":"tamil","c":"selva"}
+count=0
+
+for x in dict:
+    count=count+1
+        
+print("total items in the given dictionary" ,count)
+items=dict.items()
+print("items in the dictionary",items)
+print("sorted list",sorted(items))
+
+
+output:
+
+total items in the given dictionary 3
+items in the dictionary dict_items([('b', 'rithika'), ('e', 'tamil'), ('c', 'selva')])
+sorted list [('b', 'rithika'), ('c', 'selva'), ('e', 'tamil')]
+
+4.replace
+
+a=input("enter string")
+c=replace("is","XX")
+print(c)
+
+5.change first occurance
+
+a=input("enter string")
+c=a[0].capitalize()
+b=a.replace(a[0],c)
+print(b)
+
+
+enter stringhello hai
+Hello Hai
+
+6.repeated no in list
+
+list=[1,7,4,9,9,7,5,0,5]
+list2=[]
+list3=[]
+for i in list:
+    if i not in list2:
+        list2.append(i)
+    else:
+        list3.append(i)
+
+print("non repeated items in the list",list2)
+print("repeated items in the list",list3)
+
+output
+non repeated items in the list [1, 7, 4, 9, 5, 0]
+repeated items in the list [9, 7, 5]
+
+7.
+a=int(input("enter a"))
+b=int(input("enter b"))
+c=int(input("enter c"))
+d=a+b+c;
+print(d)
+e=int(input("enter the no to be divided"))
+f=d/e
+print(f)
+
+output:
+enter a5
+enter b8
+enter c9
+22
+enter the no to be divided10
+2.2
+
+
+8.mean
+num=[4,9,7,3,8]
+n=len(num)
+getsum=sum(num)
+mean=getsum/n
+print("mean",mean)
+
+mean 6.2
+
+median:
+
+num=[4,9,7,3,8]
+n=len(num)
+num.sort()
+
+if n%2==0:
+    m1=num[n//2]
+    m2=num[n//2-1]
+    median=(m1+m2)/2
+else:
+    median=num[n//2]
+
+print("median is" ,median)
+
+median is 7
+
+
+CONVERT INT TO BINARY,OCTAL
+
+
+        
+number=int(input("enter an integer"))
+print(bin(number),"in binary")
+print(oct(number),"in octal")
+print(hex(number),"in hexadecimal")
+
+ output:
+ 
+enter an integer20
+0b10100 in binary
+0o24 in octal
+0x14 in hexadecimal
+
+
+
+
+
+
+
+
+
+
