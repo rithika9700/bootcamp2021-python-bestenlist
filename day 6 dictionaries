@@ -1,0 +1,72 @@
+merging 2 dictionaries:
+
+def merge(dict1,dict2):
+    return(dict2.update(dict1))
+    
+    dict1={
+    'a':10,
+    'b':20
+    }
+dict2={
+    'c':9,
+    'd':8
+    }
+(merge(dict1,dict2))
+print(dict2)
+
+
+
+
+
+2.deleting a key in dict
+
+dict={
+    'a':2,'b':4,'c':5,'d':9
+    }
+
+input=input("enter the key to be deleted")
+if input in dict:
+    del dict[input]
+else:
+    print("key not found")
+print("updated dictionary",dict)
+
+output:updated dictionary {'a': 2, 'b': 4, 'd': 9}
+
+
+
+
+3.mapping 2 lists in a dictionary
+keys=['red','green','blue']
+values=['#FF000','#008000','#0000FF']
+colors = dict(zip(keys,values))
+print(colors)
+
+
+
+o/p: {'red': '#FF000', 'green': '#008000', 'blue': '#0000FF'}
+
+4.length of the set:
+
+set={"rithika","jesi","tamil","selva"}
+print(len(set))
+
+4
+
+5.removing intersection of 2nd set from 1st set:
+
+
+>>> set1={1,5,9,8,7}
+>>> set2={9,8,7,3,6}
+>>> print(set1.difference_update(set2))
+>>> print(set1)
+
+
+
+{1, 5}
+
+
+
+
+
+
