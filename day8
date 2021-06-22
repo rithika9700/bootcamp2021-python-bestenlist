@@ -1,0 +1,30 @@
+merging 2 dictionaries:
+
+def merge(dict1,dict2):
+    return(dict2.update(dict1))
+    
+    dict1={
+    'a':10,
+    'b':20
+    }
+dict2={
+    'c':9,
+    'd':8
+    }
+(merge(dict1,dict2))
+print(dict2)
+
+
+SORTING LIST AND CONVERTING INTO SET:
+names=[9,7,8,4,0,2]
+names.sort(reverse=True)
+print(names)
+print(set(names))
+               
+
+
+[9, 8, 7, 4, 2, 0]
+{0, 2, 4, 7, 8, 9}
+
+
+3.
