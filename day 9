@@ -1,0 +1,167 @@
+1.Adding 2 to every element in the list
+
+lst=[1,4,5,7,9]
+new_list=[x+2 for x in lst]
+print("old list :",lst)
+print("new list:",new_list)
+
+FIBBONACCI SEQUENCE
+
+def fib(n):
+    a=0
+    b=1
+
+    print(a)
+    print(b)
+
+    for i in range(2,n):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+
+
+fib(10)
+
+output:0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+
+ARMSTRONG NO
+example:153
+(1*1*1)+(5*5*5)+(3*3*3)=153
+
+
+num = int(input("Enter a number: "))
+
+
+sum = 0
+
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+   
+  op: Enter a number: 153
+153 is an Armstrong number
+
+
+MULTIPLICATIVE TABLE OF 9
+        
+n=int(input("enter the no"))
+for i in range(1,11):
+    print(n,"*",i,"=",n*i)
+
+op:
+enter the no9
+9 * 1 = 9
+9 * 2 = 18
+9 * 3 = 27
+9 * 4 = 36
+9 * 5 = 45
+9 * 6 = 54
+9 * 7 = 63
+9 * 8 = 72
+9 * 9 = 81
+9 * 10 = 90
+
+
+
+POSITIVE OR NEGATIVE:
+        
+n=int(input("enter the no"))
+if n>0:
+    print("no is positive")
+if n<0:
+    print("no is negative")
+if n==0:
+    print("the no is zero")
+
+
+NO OF DAYS TO AGES:
+
+days= 5555.
+years= days / 365.
+print("Number of years is: ");
+print(years);
+
+TRIG PROBLEM USING MATH FUNCTIONS:
+
+import math
+def trig(n,m):
+  if n=='cos':
+    return math.cos(m)
+   elif n=='sin':
+    return math.sin(m)
+   elif n=='tan':
+    return math.tan(m)
+   elif n=='cosine':
+    return math.cosine(m)
+   elif n=='cot':
+    return math.cot(m)
+   elif n=='cosec':
+    return math.cosec(m)
+    
+    
+BASIC CALCI:
+
+num1=int(input("enter no1"))
+num2=int(input("enter no2"))
+
+symbol=input("enter operation")
+
+if symbol=="+":
+    print (num1+num2)
+    
+if symbol=="-":
+    print(num1-num2)
+if symbol=="*":
+    print(num1*num2)
+if symbol=="/":
+    print(num1/num2)
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
