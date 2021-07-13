@@ -1,0 +1,32 @@
+1.
+file1.py
+def function(var):
+    family=["rithika","tamil","jesi"]
+    family.append(var)
+    print(family)
+    
+file2.py
+
+from file1 import function
+function("selva")
+
+o/p:['rithika', 'tamil', 'jesi', 'selva']
+
+
+2.pip install pandas
+3.import random
+print(random.randint(1,100))
+
+4.import sys
+print(sys.path)
+
+o/p:['C:\\Users\\S RITHIKA\\PycharmProjects\\task11', 'C:\\Users\\S RITHIKA\\PycharmProjects\\task11',
+'C:\\Program Files\\Python39\\python39.zip', 'C:\\Program Files\\Python39\\DLLs', 'C:\\Program Files\\Python39\\lib',
+'C:\\Program Files\\Python39', 'C:\\Users\\S RITHIKA\\AppData\\Roaming\\Python\\Python39\\site-packages', 
+'C:\\Program Files\\Python39\\lib\\site-packages']
+
+5.pip install pandas
+  pip uninstall pandas
+
+
+
