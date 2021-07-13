@@ -1,0 +1,62 @@
+1.r=lambda x,y : x*y
+print(r(9,6))
+
+o/p:54
+
+3.
+first=[5,8,4]
+num=int(input("enter no "))
+for i in range(len(first)):
+   sec= first[i]*num
+   print(sec)
+o/p:enter no 7
+35
+56
+28
+
+4.first=[5,18,4]
+
+for i in range(len(first)):
+   if first[i]%9==0:
+      print("divisible")
+      print(first[i])
+   else:
+      print("not divisible")
+      print(first[i])
+
+o/p:not divisible
+5
+divisible
+18
+not divisible
+4
+
+5.first=[5,18,4]
+count=0
+
+for i in range(len(first)):
+   if first[i]%2==0:
+      count=count+1
+
+print("the number of even numbers in the list are " , count)
+
+
+o/p:
+the number of even numbers in the list are  2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
