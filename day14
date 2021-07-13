@@ -1,0 +1,100 @@
+1.different types oferror types
+FILENOTFOUND ERROR
+try:
+    f=open('testfile.txt')
+except FileNotFoundError as e:
+    print(e)
+else:
+    print(f.read())
+    f.close()
+
+o/p:[Errno 2] No such file or directory: 'testfile.txt'
+
+2.TYPE ERROR
+
+a="10"
+b=60
+try:
+    print(a+b)
+except TypeError as e:
+    print(e)
+
+o/p:can only concatenate str (not "int") to str
+
+
+2.simple calci with try and except
+
+def calculator():
+    try:
+        num1=float(input("pls enter first num: "))
+        num2 = float(input("pls enter second num: "))
+    except ValueError as e:
+        print("Invalid number input")
+        print(e)
+        return
+
+
+    op=input("enter the operator +-/* ")
+
+    if op== "+":
+        ans=num1+num2
+
+    if op== "-":
+        ans=num1-num2
+
+    if op== "/":
+        try:
+            ans = num1 / num2
+        except ZeroDivisionError as e:
+            print("invalid equation")
+            print(e)
+            return 
+
+
+
+
+    if op== "*":
+        ans=num1*num2
+
+    print(ans)
+
+
+
+while True:
+    calculator()
+
+
+
+o/p:
+pls enter first num: 6
+pls enter second num: 0
+enter the operator +-/* /
+invalid equation
+float division by zero
+pls enter first num: 7
+pls enter second num: rithika
+Invalid number input
+could not convert string to float: 'rithika'
+pls enter first num: 5
+pls enter second num: 0
+enter the operator +-/* +
+5.0
+
+
+3.NAME ERROR
+books=["xxx","yyy","zzz"]
+try:
+    print(boooks)
+except NameError as e:
+    print("invalid")
+o/p: Invalid
+
+4. if u are sure there are no errors in the code, then try except is not required
+
+5. input operations in try except performed in the above calci program
+
+
+
+
+
+
