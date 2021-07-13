@@ -1,0 +1,12 @@
+1.
+f1=open("30hours30challenges.txt","w+")
+f1.write("I have completes 10 days successfully")
+f1.close()
+f1=open("30hours30challenges.txt","r+")
+print(f1.read())
+f1.close()
+
+
+o/p:I have completes 10 days successfully
+
+
