@@ -1,0 +1,54 @@
+1.
+import re
+def is_allowed(string):
+    charRe=re.compile(r'[^a-zA-Z0-9.]')
+    string=charRe.search(string)
+    return not bool(string)
+
+print(is_allowed("ABah89"))
+
+o/p: True
+
+2.
+
+import re
+def text_match(text):
+        patterns = '\w*ab.\w*'
+        if re.search(patterns,  text):
+                return 'Found a match!'
+        else:
+                return('Not matched!')
+
+print(text_match("The quick brown fox jumpsab over the lazy dog."))
+print(text_match("Python Exercises."))
+
+o/p:Found a match!
+Not matched!
+
+
+
+3.import re
+def text_match(text):
+        patterns = re.compile(r".*[0-9]$")
+        if patterns.match(text):
+                return 'true!'
+        else:
+                return('false')
+
+print(text_match("the lazy dog09"))
+print(text_match("Python Exercises."))
+
+o/p:true!
+false
+
+5.
+import re
+def is_allowed(string):
+    charRe=re.compile(r'[^A-Z.]')
+    string=charRe.search(string)
+    return not bool(string)
+
+print(is_allowed("ABCDE"))
+
+o/p: True
+
