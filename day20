@@ -1,0 +1,63 @@
+MAXIMUM SALARY FROM EMPLOYEE TABLE
+import mysql.connector
+
+
+
+db  = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="rithika123",
+    database="mydatabase"
+
+
+)
+mycursor=db.cursor()
+
+
+
+
+
+
+#mycursor.execute("CREATE TABLE employyee(name VARCHAR(30),salary int)")
+
+#mycursor.execute("INSERT INTO employyee(name,salary) VALUES(%s,%s)",("selva",60000))
+#mycursor.execute("INSERT INTO employyee(name,salary) VALUES(%s,%s)",("jessi",80000))
+#mycursor.execute("INSERT INTO employyee(name,salary) VALUES(%s,%s)",("rak",1000))
+#mycursor.execute("INSERT INTO employyee(name,salary) VALUES(%s,%s)",("mon",800))
+#mycursor.execute("INSERT INTO employyee(name,salary) VALUES(%s,%s)",("jani",700))
+db.commit()
+
+mycursor.execute("SELECT NAME,MAX(SALARY) FROM EMPLOYYEE")
+myresult=mycursor.fetchall()
+
+for x in myresult:
+
+    print(x)
+
+
+
+
+o/p:('selva', 80000)
+
+
+2.mycursor.execute("SELECT COUNT(*) FROM EMPLOYYEE")
+myresult=mycursor.fetchall()
+
+
+
+print(myresult)
+
+o/p:
+[(9,)]
+
+
+
+3.
+mycursor.execute("SELECT SUBSTRING(NAME,1,3) FROM EMPLOYYEE")
+myresult=mycursor.fetchall()
+
+
+print(myresult)
+
+
+o/p:[('sel',), ('jes',), ('sel',), ('jes',), ('sel',), ('jes',), ('rak',), ('mon',), ('jan',)]
