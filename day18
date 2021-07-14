@@ -1,0 +1,40 @@
+Create doctor table and insert values
+
+import mysql.connector
+db  = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="rithika123",
+    database="mydatabase"
+)
+mycursor=db.cursor()
+
+#mycursor.execute("CREATE TABLE doctor (name VARCHAR(255),  id int PRIMARY KEY AUTO_INCREMENT, patients_visited int)")
+
+#mycursor.execute("INSERT INTO doctor(name,patients_visited) VALUES(%s,%s)",("raja",0))
+#mycursor.execute("INSERT INTO doctor(name,patients_visited) VALUES(%s,%s)",("selva",25))
+#mycursor.execute("INSERT INTO doctor(name,patients_visited) VALUES(%s,%s)",("rani",6))
+
+
+
+
+db.commit()
+
+
+2.doctors with more than 5 patients 
+
+  mycursor.execute("SELECT name FROM doctor WHERE patients_visited>5")
+
+for x in mycursor:
+    print(x)
+o/p:('selva',)
+('rani',)
+
+3.doctors with 0 patient visit
+
+mycursor.execute("SELECT name FROM doctor WHERE patients_visited=0")
+
+for x in mycursor:
+    print(x)
+    
+    o/p:('raja',)
