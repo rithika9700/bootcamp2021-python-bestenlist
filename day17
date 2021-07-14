@@ -1,0 +1,67 @@
+1.Connect to db
+import mysql.connector
+mydb  = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="rithika123"
+
+)
+print(mydb)
+
+o/p:<mysql.connector.connection.MySQLConnection object at 0x000001364EF54C10>
+
+2.Create tables and insert values
+
+student table:
+import mysql.connector
+
+
+db  = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="rithika123",
+    database="mydatabase"
+
+
+)
+mycursor=db.cursor()
+#mycursor.execute("CREATE DATABASE mydatabase")
+
+
+#mycursor.execute("CREATE TABLE student (name VARCHAR(255), age int, id int PRIMARY KEY AUTO_INCREMENT)")
+
+#mycursor.execute("INSERT INTO student(name,age) VALUES(%s,%s)",("tamilselvan",15))
+mycursor.execute("INSERT INTO student(name,age) VALUES(%s,%s)",("rithika",21))
+#db.commit()
+
+mycursor.execute("SELECT * FROM student")
+
+for x in mycursor:
+    print(x)
+
+o/p:
+('tamilselvan', 15, 1)
+('rithika', 21, 2)
+
+
+3.employee table and read all names
+
+mycursor=db.cursor()
+
+#mycursor.execute("CREATE TABLE employee (name VARCHAR(255), age int, id int PRIMARY KEY AUTO_INCREMENT)")
+
+mycursor.execute("INSERT INTO employee(name,age) VALUES(%s,%s)",("selva",25))
+mycursor.execute("INSERT INTO employee(name,age) VALUES(%s,%s)",("jessi",20))
+
+
+db.commit()
+
+mycursor.execute("SELECT name FROM employee")
+myresult= mycursor.fetchall()
+
+for name in myresult:
+    print(name)
+o/p:
+selva
+jessi
+
