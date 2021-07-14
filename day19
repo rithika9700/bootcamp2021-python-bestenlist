@@ -1,0 +1,71 @@
+
+EXCEL TO DB
+
+
+import mysql.connector
+import xlrd
+
+
+db  = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="rithika123",
+    database="rithika"
+
+
+)
+mycursor=db.cursor()
+
+
+
+
+#checking wheather data is inserted
+#mycursor.execute("SELECT * FROM people")
+
+#for x in mycursor:
+ #   print(x)
+
+
+#db.close()
+l=list()
+loc=("C:\\Users\\S RITHIKA\\Desktop\\python.xlsx")
+a=xlrd.open_workbook(loc)
+
+sheet=a.sheet_by_index(0)
+sheet.cell_value(0,0)
+for i in range(1,11):
+    l.append(tuple(sheet.row_values(i)))
+
+#mycursor.execute("CREATE TABLE people(rollno int primary key,name VARCHAR(30),branch VARCHAR(40))")
+
+q="INSERT INTO people(rollno,name,branch)values(%s,%s,%s)"
+mycursor.executemany(q,l)
+db.commit()
+
+
+
+
+
+o/p:
+"C:\Program Files\Python39\python.exe" "C:/Users/S RITHIKA/PycharmProjects/task11/file1.py"
+(11, 'rithika', 'cse')
+(22, 'tamil', 'eee')
+(33, 'selva', 'ece')
+(44, 'jesi', 'mech')
+(55, 'priya', 'cse')
+(66, 'siva', 'ece')
+(77, 'manga', 'ece')
+(88, 'panda', 'ece')
+(99, 'sneha', 'eee')
+(100, 'yuva', 'cse')
+
+Process finished with exit code 0
+
+
+
+
+
+
+
+
+
